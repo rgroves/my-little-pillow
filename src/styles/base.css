@@ -44,9 +44,8 @@ main > * {
 }
 
 .button {
-
   display: inline-block;
-  margin-bottom: var(--space-xl);
+  margin: var(--space-l) 0 var(--space-l);
   padding: var(--space-xs) var(--space-xl);
   background-color: var(--primary-color);
   color: #fff;
@@ -89,7 +88,7 @@ footer {
 .product-grid > img {
   border-radius: 1em;
   width: 100%;
-  max-width: 300px;
+  max-width: 225px;
   height: auto;
 }
 
