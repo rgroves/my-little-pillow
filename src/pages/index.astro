@@ -1,0 +1,107 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import productImageXl from "../assets/my-little-pillow-drag.webp";
+const xlImageAlt =
+  "A young blonde-haired woman in her early 20s with blue eyes, wearing a red baseball cap, with the right side of her face showing toward the camera. A smallish white pillow can be seen over her right ear, covering all but the tip of the ear and some of the side of her face. The background is neutral, focusing on the woman and the pillow.";
+import productImageMale from "../assets/my-little-pillow-bi.webp";
+const maleImageAlt =
+  "A blonde-haired, blue-eyed man in his 30s or 40s, wearing a red baseball cap, with the right side of his face showing toward the camera. A very small, but extremely classy, tiny white pillow can be seen over his right ear. The background is neutral, focusing on the man and the pillow.";
+import productImageFemale from "../assets/my-little-pillow-trans.webp";
+const femaleImageAlt =
+  "A blonde-haired, blue-eyed woman in her early-to-mid 20s, wearing a red baseball cap, with the right side of her face showing toward the camera. A very small, but extremely classy, tiny white pillow can be seen over her right ear, covering most of the upper ear. The background is neutral, focusing on the woman and the pillow.";
+const rickRollUrl = "https://tinyurl.com/my-little-pillow?t=0";
+---
+
+<Layout title="My Little Pillow - Protect Your Fragile Ego">
+  <main class="flex-container">
+    <h1>My Little Pillow</h1>
+
+    <div class="product-grid">
+      <Image
+        style="flex-shrink: 1;"
+        src={productImageMale}
+        alt={maleImageAlt}
+        widths={[300, 40]}
+        sizes={`(max-width: 480px) 75px, (max-width: 720px) 150px, 250px`}
+      />
+      <Image
+        style="flex-shrink: 1;"
+        src={productImageFemale}
+        alt={femaleImageAlt}
+        widths={[300, 400]}
+        sizes={`(max-width: 480px) 75px, (max-width: 720px) 150px, 250px`}
+      />
+    </div>
+    <p>Protect Your Fragile Ego in Style</p>
+
+    <blockquote>
+      "If your ear is injured, use a bandage. For everyone else there's My
+      Little Pillow." <span class="source">—&nbsp;Chuck U Farley, CEO</span>
+    </blockquote>
+
+    <h2>Why My Little Pillow?</h2>
+    <p>
+      In today's fast-paced world, we often face criticism and challenges that
+      can bruise our egos. My Little Pillow is here to provide a gentle buffer,
+      shielding your fragile ego from the harsh realities of life. Whether
+      you're dealing with a tough day at work, a critical comment from a friend,
+      or just need a little extra comfort, this pillow is your trusty companion.
+    </p>
+
+    <a href={rickRollUrl} class="button">Order Now</a>
+
+    <div class="features">
+      <h2>Key Features</h2>
+      <ul>
+        <li>
+          <strong>Perfect Fit:</strong> One size fits all! It fits snugly over your
+          right ear, ensuring discreet comfort and protection.
+        </li>
+        <li>
+          <strong>Comfortable Design:</strong> Made from soft, high-quality fabric,
+          My Little Pillow is designed to be lightweight and comfortable for all-day
+          wear.
+        </li>
+        <li>
+          <strong>Simple Elegance:</strong> Its clean, white appearance adds a touch
+          of elegance and simplicity to your look.
+        </li>
+        <li>
+          <strong>Easy to Use:</strong> Just slip it over your right ear and let
+          My Little Pillow do the rest. It's that simple!
+        </li>
+      </ul>
+    </div>
+
+    <a href={rickRollUrl} class="button">Order Now</a>
+
+    <div class="testimonials">
+      <h2>Customer Testimonials</h2>
+      <blockquote>
+        "I've always struggled with taking things to heart. My Little Pillow has
+        been a game-changer, giving me a sense of comfort and security in social
+        situations." <span class="source">— Karen, 28</span>
+      </blockquote>
+      <blockquote>
+        "As a manager, I often receive feedback that can be hard to handle. My
+        Little Pillow has been a discreet and effective way to keep my composure
+        and confidence." <span class="source">— Jared, 35</span>
+      </blockquote>
+    </div>
+
+    <div class="coming-soon">
+      <h2>My Little Pillow XL <span>(Coming In 2025)</span></h2>
+
+      <div class="product-grid">
+        <Image
+          src={productImageXl}
+          alt={xlImageAlt}
+          widths={[150, 400]}
+          sizes={`(max-width: 720px) 150px, 400px`}
+        />
+      </div>
+      <p>My Little Pillow XL — It's perfect for trial naps!</p>
+    </div>
+  </main>
+</Layout>

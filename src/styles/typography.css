@@ -1,0 +1,43 @@
+/* @link https://utopia.fyi/type/calculator?c=320,12,1.2,1240,18,1.333,3,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --step--2: clamp(0.5208rem, 0.4818rem + 0.1953vw, 0.6331rem);
+  --step--1: clamp(0.625rem, 0.5488rem + 0.3808vw, 0.844rem);
+  --step-0: clamp(0.75rem, 0.6196rem + 0.6522vw, 1.125rem);
+  --step-1: clamp(0.9rem, 0.6914rem + 1.0428vw, 1.4996rem);
+  --step-2: clamp(1.08rem, 0.7603rem + 1.5983vw, 1.999rem);
+  --step-3: clamp(1.296rem, 0.8199rem + 2.3803vw, 2.6647rem);
+}
+
+body {
+  font-size: var(--step-0);
+  line-height: 1.5em;
+  font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
+    Arial, sans-serif;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Superclarendon, "Bookman Old Style", "URW Bookman",
+    "URW Bookman L", "Georgia Pro", Georgia, serif;
+  font-weight: 900;
+  color: var(--primary-color);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--step-3);
+  margin: var(--space-l) 0 var(--space-s);
+  line-height: 1.2em;
+}
+
+h2 {
+  font-size: var(--step-2);
+  margin: var(--space-s) 0;
+  line-height: 1.2em;
+}

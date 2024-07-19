@@ -1,0 +1,131 @@
+@import "./reset.css";
+@import "./fluid-space.css";
+@import "./typography.css";
+
+:root {
+  --primary-color: #1e3a8a; /* Navy Blue */
+  --secondary-color: #e11d48; /* Crimson Red */
+  --neutral-color: #eae8e8; /* White */
+  --accent-color: #ffd700; /* Gold */
+  --main-surface: var(--neutral-color);
+}
+
+body {
+  color: var(--text-color);
+  line-height: var(--step-2);
+  margin: var(--space-s-l);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  background-color: var(--main-surface);
+  border-radius: var(--space-xs);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 50ch;
+  max-width: calc(50 * 1rem);
+  margin: var(--space-s-l);
+  padding: 0 var(--space-xl) var(--space-l);
+
+  display: flex;
+  flex-direction: column;
+}
+
+main > * {
+  align-self: center;
+}
+
+.button {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-xl);
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  margin: 20px 0;
+  border: 5px solid var(--neutral-color);
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.25s ease-in-out;
+  font-size: var(--step-1);
+  border: 5px solid var(--neutral-color);
+}
+
+.button:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border: 5px solid var(--secondary-color);
+  transition: 0.25s ease-in-out;
+}
+
+footer {
+  margin-top: var(--space-xs);
+  text-wrap: balance;
+  width: 100%;
+  max-width: calc(50 * 1rem);
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr, 1fr;
+  line-height: 1.25rem;
+}
+
+.product-grid {
+  margin: var(--space-s) 0 var(--space-3xs);
+  display: flex;
+  gap: var(--space-m);
+}
+
+.product-grid > img {
+  border-radius: 1em;
+  max-width: 100%;
+  height: auto;
+}
+
+blockquote {
+  margin: var(--space-s-l) var(--space-s-l);
+  font-size: var(--step-0);
+  font-style: italic;
+  text-align: left;
+}
+
+blockquote > .source {
+  padding: var(--space-3xs);
+  font-style: normal;
+  display: flex;
+  justify-content: right;
+}
+
+.features,
+.testimonials,
+.coming-soon > h2 {
+  text-align: center;
+}
+
+.features {
+  padding-bottom: var(--space-s);
+}
+
+.features > ul > li {
+  padding-top: var(--space-s);
+  text-align: left;
+}
+
+.coming-soon {
+  text-align: center;
+}
+
+#parodys {
+  font-size: 1.5rem;
+}
+
+#parodys:hover {
+  background-color: var(--accent-color);
+}
