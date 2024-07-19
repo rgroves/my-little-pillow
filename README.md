@@ -1,5 +1,7 @@
 # My Little Pillow Landing Page
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c90990e3-35ec-40e7-a544-1b9b76db0472/deploy-status)](https://app.netlify.com/sites/mylittlepillow/deploys)
+
 Welcome to the **My Little Pillow** landing page repository! This project features a humorous and whimsical product designed to poke fun at [2024 RNC ear bandage wearers](https://www.google.com/search?q=rnc+ear+bandages+in+crowd&sca_esv=0859001573093002&sca_upv=1&biw=1280&bih=712&sxsrf=ADLYWIKHzT5Z1NsRrmO_IJ6-mmhXh59sQQ%3A1721376383922&source=lnt&tbs=cdr%3A1%2Ccd_min%3A7%2F16%2F2024%2Ccd_max%3A7%2F18%2F2024&tbm=nws). **My Little Pillow** is a tiny white pillow that fits snugly over the right ear providing a gentle buffer from life's harsh critiques.
 
 ## About
