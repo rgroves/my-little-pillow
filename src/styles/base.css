@@ -44,12 +44,13 @@ main > * {
 }
 
 .button {
+
   display: inline-block;
+  margin-bottom: var(--space-xl);
   padding: var(--space-xs) var(--space-xl);
   background-color: var(--primary-color);
   color: #fff;
   text-decoration: none;
-  margin: 20px 0;
   border: 5px solid var(--neutral-color);
   border-radius: 10px;
   font-weight: bold;
@@ -80,12 +81,15 @@ footer {
 .product-grid {
   margin: var(--space-s) 0 var(--space-3xs);
   display: flex;
+  flex-wrap: wrap;
   gap: var(--space-m);
+  justify-content: center;
 }
 
 .product-grid > img {
   border-radius: 1em;
-  max-width: 100%;
+  width: 100%;
+  max-width: 300px;
   height: auto;
 }
 
